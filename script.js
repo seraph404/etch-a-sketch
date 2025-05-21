@@ -1,4 +1,9 @@
 
+function draw() {
+    return this.style.backgroundColor = "black";
+}
+
+
 
 // draw the grid on the page
 function drawGrid(gridSize) {
@@ -12,6 +17,7 @@ function drawGrid(gridSize) {
 
     for (let i = 0; i < gridSize; i++) {
         let div = document.createElement('div');
+        div.addEventListener('mouseenter', draw);
         
         div.style.width = divSize + "px";
         div.style.height = divSize + "px";
