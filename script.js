@@ -4,6 +4,8 @@ const CONTAINER_SIZE = 600;
 
 const container = document.querySelector('#container');
 const newGridButton = document.querySelector('#new-grid');
+newGridButton.addEventListener('click', createNewGrid);
+
 container.style.width = CONTAINER_SIZE + "px";
 container.style.height = CONTAINER_SIZE + "px";
 
